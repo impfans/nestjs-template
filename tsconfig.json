@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "module": "Node16",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2022",
+    "lib": ["DOM", "ES2023"],
+    "moduleResolution": "node16",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "~controllers": ["src/controllers/"],
+      "~services": ["src/services/"],
+      "~filters": ["src/filters/"],
+      "~utils": ["src/utils/"],
+      "~interceptor": ["src/interceptor/"],
+      "~constants": ["src/constants/"],
+      "~config": ["src/config/"],
+      "~middleware": ["src/middleware/"],
+      "~interfaces": ["src/interfaces/"],
+    }
+  },
+  "exclude": ["dist", "node_modules", "upload"]
+}
